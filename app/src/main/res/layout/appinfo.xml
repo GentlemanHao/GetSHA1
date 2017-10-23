@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="6dp"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="14dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/app_icon"
+            android:text="猫眼电影"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/app_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/app_name"
+            android:layout_below="@id/app_name"
+            android:layout_marginTop="10dp"
+            android:text="com.goldou.movie" />
+
+        <TextView
+            android:id="@+id/app_b_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/app_icon"
+            android:layout_below="@id/app_icon"
+            android:layout_marginTop="10dp"
+            android:text="版本名称：" />
+
+        <TextView
+            android:id="@+id/app_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/app_icon"
+            android:layout_below="@id/app_b_name"
+            android:layout_marginTop="10dp"
+            android:text="路径：" />
+
+        <TextView
+            android:id="@+id/app_sha1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/app_icon"
+            android:layout_below="@id/app_path"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="SHA1：" />
+
+        <ImageView
+            android:id="@+id/app_share"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_share" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
